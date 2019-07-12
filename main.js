@@ -58,12 +58,12 @@ function showSlides2() {
 
 //this code controls the pause button
 function pauseSlideshow() {
-  pauseButton.innerHTML = "Play";
+  pauseButton.innerHTML = `<i class="fas fa-pause"></i>`;
   playing = false;
   clearTimeout(slideInterval);
 }
 function playSlideshow() {
-  pauseButton.innerHTML = "Pause";
+  pauseButton.innerHTML = `<i class="fas fa-play"></i>`;
   playing = true;
   slideInterval = setTimeout(showSlides2, 5000);
 }

@@ -427,6 +427,32 @@ main {
   padding: 10px;
 }
 
+#pause {
+  padding: 5em;
+  border-radius: 50%;
+  position: absolute;
+  border: none;
+  left: 60%;
+  bottom: -112%;
+  background-color: transparent;
+}
+
+#pause i {
+  font-size: 2em;
+  color: transparent;
+}
+/* #pause:hover {
+  transition: 0.3s;
+  cursor: pointer;
+  background-color: lightgray;
+  opacity: 0;
+} */
+#pause i:hover {
+  color: black;
+
+  opacity: 1;
+}
+
 footer {
   width: 100%;
   height: 25em;
