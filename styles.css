@@ -135,7 +135,7 @@ main {
   grid-template-columns: 405px 405px 405px;
   grid-template-rows: 325px 325px;
   /* grid-template-rows: 310px 335px 200px; */
-  grid-gap: 3em;
+  grid-gap: 1em;
 }
 
 #about-menu {
@@ -145,7 +145,7 @@ main {
   padding: 0.5em 0.5em 0em 0.5em;
 
   grid-column-start: 1;
-  grid-column-end: ;
+
   grid-row-start: 1;
   grid-row-end: 3;
 }
@@ -228,8 +228,8 @@ main {
 /* This styles the special of the day */
 #specialDay {
   border: var(--main-border);
-  grid-column-start: 2;
-  grid-row-start: 2;
+  grid-column-start: 3;
+  grid-row-start: 1;
   background-color: #ee9634;
   border-radius: 24px;
 }
@@ -242,6 +242,17 @@ main {
   border: var(--main-border);
   width: 25em;
   margin-left: -0.5em;
+  display: grid;
+  padding-top: 10px;
+  padding-left: 10px;
+  /* grid-template-columns: 185px 185px; */
+  grid-template-columns: 11.5em 11.5em;
+  grid-template-rows: 8.5em 8.5em;
+  /* grid-template-rows: 135px 135px; */
+  grid-gap: 5px;
+}
+#specialPic {
+  border: var(--main-border);
 }
 
 #tabMenu {
