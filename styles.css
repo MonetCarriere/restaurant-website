@@ -23,20 +23,7 @@ header {
 
   margin: auto;
 }
-@media (max-width: 600px) {
-  #header {
-    display: flex;
-  }
-  #banner-pic {
-    display: none;
-  }
-  #logo {
-    float: left;
-  }
-  nav {
-    display: block;
-    border: none;
-  }
+@media (max-width: 700px) {
 }
 
 #logo {
@@ -100,6 +87,7 @@ header {
 }
 
 nav {
+  width: 100%;
   border-bottom: 1px solid black;
 }
 
@@ -136,11 +124,11 @@ ul a {
 }
 
 main {
-  /* width: 100%; */
+  width: 100%;
 }
 /* this sets up the grid for the main area */
 #grid-container {
-  padding: 50px 0 50px 230px;
+  padding: 5em 0 5em 10em;
   display: grid;
   grid-template-columns: repeat(3, 3fr);
   grid-template-rows: repeat(3, 2fr);
@@ -187,7 +175,7 @@ main {
   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
   height: 19em;
   border-radius: 25px;
-  width: 20em;
+  width: 25em;
 }
 
 #location {
