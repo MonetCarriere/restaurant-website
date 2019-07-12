@@ -447,9 +447,9 @@ main {
   background-color: lightgray;
   opacity: 0;
 } */
+/* not, the button dosnt stay dark because it switches to the javascript placed ones which are not colored right */
 #pause i:hover {
   color: black;
-
   opacity: 1;
 }
 
