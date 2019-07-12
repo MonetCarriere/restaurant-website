@@ -16,6 +16,7 @@ header {
 :root {
   --main-border: 1px solid black;
   --menu-item-font: 14px;
+  --readMore: <a href= "#" >[Read More];
 }
 
 #banner {
@@ -128,7 +129,8 @@ main {
 }
 /* this sets up the grid for the main area */
 #grid-container {
-  padding: 5em 0 5em 10em;
+  padding: 5em 0 5em 11em;
+
   display: grid;
   grid-template-columns: repeat(3, 3fr);
   grid-template-rows: repeat(3, 2fr);
@@ -149,20 +151,18 @@ main {
 #innermenu {
   border: var(--main-border);
   margin-top: 13px;
-  margin-left: 10px;
+  margin-left: 5px;
   padding-right: 1em;
   height: 40em;
-  /* height: 675px; */
   width: 25em;
   background: #ffffff;
   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 24px;
 }
-
+/* This styles the whole of the Latest News segment */
 #latestNews {
   border: var(--main-border);
   background-color: #ee9634;
-
   grid-column-start: 2;
   grid-row-start: 1;
   border-radius: 24px;
@@ -171,11 +171,57 @@ main {
 
 #innerNews {
   border: var(--main-border);
+  display: grid;
+  grid-template-columns: 10em 10em;
+  grid-template-rows: 0em 1em;
+  padding-left: 1.5em;
+  padding-top: 1.5em;
+  grid-gap: 2em;
   background: #ffffff;
   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
   height: 19em;
   border-radius: 25px;
   width: 25em;
+}
+/* sets up grid for the story and picture */
+#tag {
+  height: 2em;
+  /* border: var(--main-border); */
+  margin-bottom: 1em;
+  grid-row-start: 1;
+}
+
+#innerP {
+  height: 14em;
+  grid-column-start: 1;
+  white-space: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#portraitPicture {
+  height: 13em;
+  border: var(--main-border);
+  grid-row-start: 1;
+  background-image: url("assets/simon.jpg");
+  background-repeat: no-repeat;
+  background-position: 60% 10%;
+  box-shadow: 0px 0px 8px 1px black;
+}
+#readMore {
+  height: 5em;
+  font-size: 1.5em;
+  margin-top: 0.5em;
+  grid-column-start: 2;
+  grid-row-start: 7;
+}
+#readMore a {
+  text-decoration: none;
+  color: black;
+}
+#readMore a:hover {
+  color: lightgray;
+  transition: 0.3s;
+  transform: scale(1.2);
 }
 
 #location {
@@ -231,6 +277,7 @@ main {
 }
 #about a:hover {
   border-bottom: 1px solid black;
+  transition: 0.3s;
   color: grey;
 }
 /* this section lays out the area for the about me and the carosel */
@@ -260,4 +307,10 @@ main {
 }
 #paratwo p {
   padding: 10px;
+}
+
+footer {
+  width: 100%;
+  height: 25em;
+  border: var(--main-border);
 }
