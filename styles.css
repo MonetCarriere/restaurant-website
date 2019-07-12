@@ -1,0 +1,116 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+#banner {
+    width: 840px;
+
+    margin: auto;
+}
+
+#logo {
+    position: absolute;
+    width: 248px;
+    height: 225px;
+    left: 522.13px;
+    top: 10px;
+    box-shadow: 0px 0px 10px 1px lightgrey;
+}
+
+#banner-pic {
+    background: url(assets/pexels-photo-1528013.jpeg);
+    box-shadow: 0px 0px 10px 1px lightgrey;
+
+    background-position: 45% 47%;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 830px;
+    height: 222px;
+
+    top: 5.49px;
+    transform: rotate(-0.07deg);
+
+}
+
+#socialMedia {
+    /* display: block; */
+    position: relative;
+    float: right;
+    bottom: 200px;
+    right: 150px;
+}
+
+
+
+#socialMedia i {
+    font-size: 45px;
+    padding-bottom: 5px;
+}
+
+#opentable {
+    padding-top: 5px;
+    height: 45px;
+    width: 45px;
+}
+
+#facbook {
+    color: #3b5998;
+    /* color: #3b5998; */
+}
+
+#instagram {
+
+    background-image: linear-gradient(-90deg, #3b5998, #3b5998, #bc2a8d, #fccc63, #fccc63);
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+}
+
+nav {
+    height: 275px;
+    border-bottom: 1px solid black;
+}
+
+ul a {
+    text-decoration: none;
+    color: black;
+}
+
+#nav-bar {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+#nav-bar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 10px;
+
+
+}
+
+#nav-bar ul>li {
+    padding: 5px;
+}
+
+#nav-bar ul li a {
+    padding-left: 100px;
+    padding-right: 90px;
+}
+
+#nav-bar a:hover {
+    color: lightgray;
+}
