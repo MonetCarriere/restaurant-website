@@ -13,7 +13,7 @@ function currentSlide(n) {
 
 function showSlides(n) {
   var i;
-  var slides = document.getElementsByClassName("slides");
+  var slides = document.getElementsByClassName("myslides");
   var dots = document.getElementsByClassName("dot");
   if (n > slides.length) {
     slideIndex = 1;
@@ -29,4 +29,24 @@ function showSlides(n) {
   }
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active";
+}
+
+//JS for the auto scroll for food
+var slideIndex = 0;
+showSlides2();
+
+function showSlides2() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides2");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {
+    slideIndex = 1;
+  }
+
+  slides[slideIndex - 1].style.display = "block";
+  slides[slideIndex - 1].style.transition = "1.5";
+  setTimeout(showSlides2, 5000); // Change image every 2 seconds
 }
