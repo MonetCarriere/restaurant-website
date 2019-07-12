@@ -1,116 +1,263 @@
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 header {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+}
+
+:root {
+  --main-border: 1px solid black;
+  --menu-item-font: 14px;
 }
 
 #banner {
-    width: 840px;
+  width: 840px;
 
-    margin: auto;
+  margin: auto;
+}
+@media (max-width: 700px) {
 }
 
 #logo {
-    position: absolute;
-    width: 248px;
-    height: 225px;
-    left: 522.13px;
-    top: 10px;
-    box-shadow: 0px 0px 10px 1px lightgrey;
+  position: absolute;
+  width: 17em;
+  height: 13em;
+  left: 42%;
+  top: 1%;
+  box-shadow: 0px 0px 10px 1px lightgrey;
 }
 
 #banner-pic {
-    background: url(assets/pexels-photo-1528013.jpeg);
-    box-shadow: 0px 0px 10px 1px lightgrey;
+  background: url(assets/pexels-photo-1528013.jpeg);
+  box-shadow: 0px 0px 10px 1px lightgrey;
 
-    background-position: 45% 47%;
-    background-repeat: no-repeat;
-    position: relative;
-    width: 830px;
-    height: 222px;
+  background-position: 45% 47%;
+  background-repeat: no-repeat;
+  width: 53em;
+  height: 13em;
 
-    top: 5.49px;
-    transform: rotate(-0.07deg);
-
+  top: 5.49px;
+  transform: rotate(-0.07deg);
 }
 
 #socialMedia {
-    /* display: block; */
-    position: relative;
-    float: right;
-    bottom: 200px;
-    right: 150px;
+  /* display: block; */
+  position: relative;
+  float: right;
+  bottom: 200px;
+  right: 150px;
 }
 
-
-
 #socialMedia i {
-    font-size: 45px;
-    padding-bottom: 5px;
+  font-size: 45px;
+  padding-bottom: 5px;
 }
 
 #opentable {
-    padding-top: 5px;
-    height: 45px;
-    width: 45px;
+  padding-top: 5px;
+  height: 45px;
+  width: 45px;
 }
 
 #facbook {
-    color: #3b5998;
-    /* color: #3b5998; */
+  color: #3b5998;
+  /* color: #3b5998; */
 }
 
 #instagram {
-
-    background-image: linear-gradient(-90deg, #3b5998, #3b5998, #bc2a8d, #fccc63, #fccc63);
-    height: 40px;
-    width: 40px;
-    border-radius: 10px;
+  background-image: linear-gradient(
+    -90deg,
+    #3b5998,
+    #3b5998,
+    #bc2a8d,
+    #fccc63,
+    #fccc63
+  );
+  height: 40px;
+  width: 40px;
+  border-radius: 10px;
 }
 
 nav {
-    height: 275px;
-    border-bottom: 1px solid black;
+  width: 100%;
+  border-bottom: 1px solid black;
 }
 
 ul a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 #nav-bar {
-    display: flex;
-    justify-content: space-evenly;
-
+  display: flex;
+  justify-content: space-evenly;
 }
 
 #nav-bar ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-evenly;
-    margin-right: 10px;
-
-
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 1em;
+  margin-right: 1em;
 }
 
-#nav-bar ul>li {
-    padding: 5px;
+#nav-bar ul > li {
+  margin-bottom: -1em;
+  padding: 1em;
 }
 
 #nav-bar ul li a {
-    padding-left: 100px;
-    padding-right: 90px;
+  padding-left: 5em;
+  padding-right: 7em;
 }
 
 #nav-bar a:hover {
-    color: lightgray;
+  color: lightgray;
+}
+
+main {
+  width: 100%;
+}
+/* this sets up the grid for the main area */
+#grid-container {
+  padding: 5em 0 5em 10em;
+  display: grid;
+  grid-template-columns: repeat(3, 3fr);
+  grid-template-rows: repeat(3, 2fr);
+  /* grid-template-rows: 310px 335px 200px; */
+  grid-gap: 3em;
+}
+
+#about-menu {
+  border: 1px solid black;
+  background-color: #ee9634;
+  border-radius: 24px;
+  padding: 0.5em 0.5em 0em 0.5em;
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+#innermenu {
+  border: var(--main-border);
+  margin-top: 13px;
+  margin-left: 10px;
+  padding-right: 1em;
+  height: 40em;
+  /* height: 675px; */
+  width: 25em;
+  background: #ffffff;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 24px;
+}
+
+#latestNews {
+  border: var(--main-border);
+  background-color: #ee9634;
+
+  grid-column-start: 2;
+  grid-row-start: 1;
+  border-radius: 24px;
+  padding: 0.5em 0.5em 0.5em 0.5em;
+}
+
+#innerNews {
+  border: var(--main-border);
+  background: #ffffff;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  height: 19em;
+  border-radius: 25px;
+  width: 25em;
+}
+
+#location {
+  border: var(--main-border);
+  grid-column-start: 2;
+  grid-row-start: 2;
+  border-radius: 24px;
+}
+
+#tabMenu {
+  display: grid;
+  grid-template-columns: 80px 80px 80px;
+  padding: 15px 0 0 40px;
+  grid-column-gap: 20px;
+}
+/* this is for the styling of the menu tabs */
+#about {
+  grid-column-start: 1;
+  height: 30px;
+  font-size: var(--menu-item-font);
+}
+#menu {
+  grid-column-start: 2;
+  height: 30px;
+  font-size: var(--menu-item-font);
+}
+#reservation {
+  grid-column-start: 3;
+  height: 30px;
+  font-size: var(--menu-item-font);
+}
+/* this takes care of all the hover elements and postions the tabs */
+#reservation a {
+  text-decoration: none;
+  color: black;
+}
+#reservation a:hover {
+  border-bottom: 1px solid black;
+  color: grey;
+}
+#menu a {
+  text-decoration: none;
+  padding-left: 18px;
+  color: black;
+}
+#menu a:hover {
+  border-bottom: 1px solid black;
+  color: grey;
+}
+#about a {
+  text-decoration: none;
+  color: black;
+}
+#about a:hover {
+  border-bottom: 1px solid black;
+  color: grey;
+}
+/* this section lays out the area for the about me and the carosel */
+#content-inner {
+  display: grid;
+  grid-auto-rows: 250px 250px 250px;
+  grid-gap: 5px;
+}
+/* i styled the sections to fit inside the innerabout */
+#paraone {
+  height: 200px;
+}
+#paraone p {
+  padding: 10px;
+}
+
+#carousel {
+  height: 200px;
+}
+#carousel img {
+  height: 200px;
+  width: 375px;
+  padding-left: 2px;
+}
+#paratwo {
+  height: 200px;
+}
+#paratwo p {
+  padding: 10px;
 }
