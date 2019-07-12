@@ -129,11 +129,11 @@ main {
 }
 /* this sets up the grid for the main area */
 #grid-container {
-  padding: 5em 0 5em 11em;
+  padding: 5em 0 5em 1em;
 
   display: grid;
-  grid-template-columns: repeat(3, 3fr);
-  grid-template-rows: repeat(3, 2fr);
+  grid-template-columns: 405px 405px 405px;
+  grid-template-rows: 325px 325px;
   /* grid-template-rows: 310px 335px 200px; */
   grid-gap: 3em;
 }
@@ -143,20 +143,21 @@ main {
   background-color: #ee9634;
   border-radius: 24px;
   padding: 0.5em 0.5em 0em 0.5em;
+
   grid-column-start: 1;
-  grid-column-end: 1;
+  grid-column-end: ;
   grid-row-start: 1;
   grid-row-end: 3;
 }
 #innermenu {
   border: var(--main-border);
-  margin-top: 13px;
-  margin-left: 5px;
+  margin-top: 0px;
+  margin-left: -0.5em;
   padding-right: 1em;
-  height: 40em;
+  height: 42em;
   width: 25em;
   background: #ffffff;
-  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 25px 4px 20px 0px rgba(0, 0, 0, 0.25);
   border-radius: 24px;
 }
 /* This styles the whole of the Latest News segment */
@@ -166,7 +167,7 @@ main {
   grid-column-start: 2;
   grid-row-start: 1;
   border-radius: 24px;
-  padding: 0.5em 0.5em 0.5em 0.5em;
+  padding: 0.5em 0.5em 0.5em -0.5em;
 }
 
 #innerNews {
@@ -178,10 +179,11 @@ main {
   padding-top: 1.5em;
   grid-gap: 2em;
   background: #ffffff;
-  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 20px 15px 20px 10px rgba(0, 0, 0, 0.25);
   height: 19em;
   border-radius: 25px;
   width: 25em;
+  margin-left: -0.5em;
 }
 /* sets up grid for the story and picture */
 #tag {
@@ -223,12 +225,23 @@ main {
   transition: 0.3s;
   transform: scale(1.2);
 }
-
-#location {
+/* This styles the special of the day */
+#specialDay {
   border: var(--main-border);
   grid-column-start: 2;
   grid-row-start: 2;
+  background-color: #ee9634;
   border-radius: 24px;
+}
+
+#innerSpecial {
+  background: #ffffff;
+  box-shadow: 20px 15px 20px 10px rgba(0, 0, 0, 0.25);
+  height: 19em;
+  border-radius: 25px;
+  border: var(--main-border);
+  width: 25em;
+  margin-left: -0.5em;
 }
 
 #tabMenu {
@@ -294,14 +307,97 @@ main {
   padding: 10px;
 }
 
+/* This styles the actual carousel itself */
+
 #carousel {
   height: 200px;
+  width: 375px;
+  position: relative;
+  margin: auto;
 }
-#carousel img {
+.slides img {
   height: 200px;
   width: 375px;
   padding-left: 2px;
 }
+
+.slides {
+  display: none;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.numbertext {
+  color: #f2f2f2;
+  font-size: 10px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Dots and bullet indicators */
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animations */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*  */
 #paratwo {
   height: 200px;
 }

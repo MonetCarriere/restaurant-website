@@ -54,7 +54,32 @@
                     <div id="content-inner">
                         <div id="paraone">
                             <p>We are a modern fine dining restaurant where experimentation becomes the everyday. Every dish at Lush has its own story from traditional recipes to modern updates that tell the history of our team, cooks and chefs who have left their mark on our kitchen as well as our serving staff and managers who have been ambassadors of hospitality. The concept of our restaurant is to bring innovative taste to the table,</p></div>
-                        <div id="carousel"><img src="assets/inside image.jpg" alt="" srcset=""></div>
+                        <div id="carousel">
+                                <div class="slides fade">
+                                     <img src="assets/inside-image2.jpeg" style="width:100%">
+                                        
+                                </div>
+                                    
+                                <div class="slides fade">
+                                    <img src="assets/inside image.jpg" style="width:100%">              </div>
+                                    
+                                <div class="slides fade">
+                                    <img src="assets/inside-image3.jpg" style="width:100%">
+                                       
+                                </div>
+
+
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        </div>
+                        <br>
+                        <div style="text-align: center">
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                        </div>
+
+
                         <div id="paratwo">
                             <p>from your favourites to those rare varieties you don’t see everyday. Our menu is never done. We find inspiration all around in new ingredients, new approaches, and fresh takes on old standards. Experience cuisine that’s constantly evolving in a setting that’s forever inviting. Drink with delight at the bar. Make the menu your own. Let the exploration unfold.</p>
                         </div>
@@ -71,21 +96,23 @@
                         </div>
                    
                 </div>
-                <div id="location">
-                    <div id="innerlocation">
-                        <div id="actualLocation"></div>
+                <div id="specialDay">
+                    <div id="innerSpecial">
+                        <div id="specialPic"></div>
+                        <div id="specialDesc"></div>
                     </div>
                 </div>
             </div>
         </main>
         <footer>
-            
+
         </footer>
 
         <script src="https://code.jquery.com/jquery-3.4.1.js"
             integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+            <script src="main.js"></script>
         <script src="https://kit.fontawesome.com/abbda0d1d2.js"></script>
-        <script src="main.js"></script>
+       
     </div>
 </body>
 
