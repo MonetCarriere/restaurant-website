@@ -123,12 +123,12 @@ ul a {
 main {
   width: 100%;
 }
-
+/* this sets up the grid for the main area */
 #grid-container {
   padding: 50px 0 50px 230px;
   display: grid;
   grid-template-columns: 400px 400px 400px;
-  grid-template-rows: 200px 200px 200px;
+  grid-template-rows: 310px 335px 200px;
   grid-gap: 50px;
 }
 
@@ -145,7 +145,7 @@ main {
   border: var(--main-border);
   margin-top: 13px;
   margin-left: 10px;
-  height: 425px;
+  height: 675px;
   width: 380px;
   background: #ffffff;
   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -166,7 +166,7 @@ main {
   border: var(--main-border);
   background: #ffffff;
   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-  height: 190px;
+  height: 295px;
   border-radius: 25px;
   width: 380px;
 }
@@ -200,6 +200,7 @@ main {
   height: 30px;
   font-size: var(--menu-item-font);
 }
+/* this takes care of all the hover elements and postions the tabs */
 #reservation a {
   text-decoration: none;
   color: black;
@@ -224,4 +225,32 @@ main {
 #about a:hover {
   border-bottom: 1px solid black;
   color: grey;
+}
+/* this section lays out the area for the about me and the carosel */
+#content-inner {
+  display: grid;
+  grid-auto-rows: 250px 250px 250px;
+  grid-gap: 5px;
+}
+/* i styled the sections to fit inside the innerabout */
+#paraone {
+  height: 200px;
+}
+#paraone p {
+  padding: 10px;
+}
+
+#carousel {
+  height: 200px;
+}
+#carousel img {
+  height: 200px;
+  width: 375px;
+  padding-left: 2px;
+}
+#paratwo {
+  height: 200px;
+}
+#paratwo p {
+  padding: 10px;
 }
