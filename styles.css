@@ -8,6 +8,11 @@ html {
     box-sizing: inherit;
 }
 
+header {
+    display: flex;
+    flex-direction: column;
+}
+
 #banner {
     width: 840px;
 
@@ -39,29 +44,41 @@ html {
 }
 
 #socialMedia {
-    display: flex;
+    /* display: block; */
     position: relative;
-
-    justify-content: flex-end;
+    float: right;
     bottom: 200px;
-    right: 50px;
+    right: 150px;
 }
+
+
 
 #socialMedia i {
     font-size: 45px;
-
+    padding-bottom: 5px;
 }
 
 #opentable {
-
+    padding-top: 5px;
     height: 45px;
     width: 45px;
 }
 
+#facbook {
+    color: #3b5998;
+    /* color: #3b5998; */
+}
 
+#instagram {
+
+    background-image: linear-gradient(-90deg, #3b5998, #3b5998, #bc2a8d, #fccc63, #fccc63);
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+}
 
 nav {
-    width: 100%;
+    height: 275px;
     border-bottom: 1px solid black;
 }
 
@@ -80,7 +97,7 @@ ul a {
     list-style: none;
     display: flex;
     justify-content: space-evenly;
-    margin-right: 75px;
+    margin-right: 10px;
 
 
 }
