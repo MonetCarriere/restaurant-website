@@ -37,7 +37,7 @@ function showSlides(n) {
 var slideIndex = 0;
 let playing = true;
 let pauseButton = document.getElementById("pause");
-let slideInterval = setTimeout(showSlides2, 5000); // Change image every 5 seconds
+//let slideInterval = setTimeout(showSlides2, 5000); // Change image every 5 seconds
 showSlides2();
 
 function showSlides2() {
@@ -54,24 +54,25 @@ function showSlides2() {
 
   slides[slideIndex - 1].style.display = "block";
   slides[slideIndex - 1].style.transition = "1.5";
+  setTimeout(showSlides2, 5000); //make sure to turn this back on before deploying
 }
 
 //this code controls the pause button
-function pauseSlideshow() {
-  pauseButton.innerHTML = `<i class="fas fa-pause"></i>`;
-  playing = false;
-  clearTimeout(slideInterval);
-}
-function playSlideshow() {
-  pauseButton.innerHTML = `<i class="fas fa-play"></i>`;
-  playing = true;
-  slideInterval = setTimeout(showSlides2, 5000);
-}
+// function pauseSlideshow() {
+//   pauseButton.innerHTML = `<i class="fas fa-pause"></i>`;
+//   playing = false;
+//   clearTimeout(slideInterval);
+// }
+// function playSlideshow() {
+//   pauseButton.innerHTML = `<i class="fas fa-play"></i>`;
+//   playing = true;
+//   slideInterval = setTimeout(showSlides2, 5000);
+// }
 
-pauseButton.onclick = function() {
-  if (playing) {
-    pauseSlideshow();
-  } else {
-    playSlideshow();
-  }
-};
+// pauseButton.onclick = function() {
+//   if (playing) {
+//     pauseSlideshow();
+//   } else {
+//     playSlideshow();
+//   }
+// };
