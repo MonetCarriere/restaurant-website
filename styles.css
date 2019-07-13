@@ -304,7 +304,7 @@ main {
 /* this section lays out the area for the about me and the carosel */
 #content-inner {
   display: grid;
-  grid-auto-rows: 250px 250px 250px;
+  grid-auto-rows: 250px 5px 100px 250px
   grid-gap: 5px;
 }
 /* i styled the sections to fit inside the innerabout */
