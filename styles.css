@@ -325,12 +325,12 @@ main {
 }
 #foodSlider {
   border: var(--main-border);
-  height: 19em;
+  height: 19.2em;
   border-radius: 25px;
-  width: 52em;
+  width: 35em;
   grid-column-start: 0;
 
-  margin-left: -0.5em;
+  margin-left: 10em;
 }
 #foodSlider img {
   border-radius: 25px;
@@ -425,32 +425,6 @@ main {
 }
 #paratwo p {
   padding: 10px;
-}
-
-#pause {
-  padding: 5em;
-  border-radius: 50%;
-  position: absolute;
-  border: none;
-  left: 60%;
-  bottom: -112%;
-  background-color: transparent;
-}
-
-#pause i {
-  font-size: 2em;
-  color: transparent;
-}
-/* #pause:hover {
-  transition: 0.3s;
-  cursor: pointer;
-  background-color: lightgray;
-  opacity: 0;
-} */
-/* not, the button dosnt stay dark because it switches to the javascript placed ones which are not colored right */
-#pause i:hover {
-  color: black;
-  opacity: 1;
 }
 
 footer {
