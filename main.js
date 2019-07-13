@@ -76,3 +76,14 @@ function showSlides2() {
 //     playSlideshow();
 //   }
 // };
+
+$(document).ready(() => {
+  $(document).on("click", ".tabItem", function() {
+    $(".tabItem").removeClass("active2");
+    $(this).addClass("active2");
+    let content = $(this).attr("data-shizzle");
+    $("#content-inner section").removeClass("active1");
+    $("#" + content).addClass("active1");
+  });
+  //this assigns an active class to each tab item and then highlights each item
+});

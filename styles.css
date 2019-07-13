@@ -253,58 +253,32 @@ main {
 }
 
 #tabMenu {
-  display: grid;
+  display: flex;
+  justify-content: space-evenly;
   grid-template-columns: 80px 80px 80px;
   padding: 15px 0 0 40px;
   grid-column-gap: 20px;
 }
+
+.tabItem:hover {
+  /*border-bottom: var(--main-border);*/
+  background-color: #fcecd9;
+  cursor: pointer;
+}
+
 /* this is for the styling of the menu tabs */
-#about {
-  grid-column-start: 1;
-  height: 30px;
-  font-size: var(--menu-item-font);
-}
-#menu {
-  grid-column-start: 2;
-  height: 30px;
-  font-size: var(--menu-item-font);
-}
-#reservation {
-  grid-column-start: 3;
-  height: 30px;
-  font-size: var(--menu-item-font);
-}
 /* this takes care of all the hover elements and postions the tabs */
-#reservation a {
+
+.tabItem > span {
   text-decoration: none;
   color: black;
+  font-size: 1.3em;
 }
-#reservation a:hover {
-  border-bottom: 1px solid black;
-  color: grey;
-}
-#menu a {
-  text-decoration: none;
-  padding-left: 18px;
-  color: black;
-}
-#menu a:hover {
-  border-bottom: 1px solid black;
-  color: grey;
-}
-#about a {
-  text-decoration: none;
-  color: black;
-}
-#about a:hover {
-  border-bottom: 1px solid black;
-  transition: 0.3s;
-  color: grey;
-}
+
 /* this section lays out the area for the about me and the carosel */
 #content-inner {
   display: grid;
-  grid-auto-rows: 250px 5px 100px 250px
+  grid-auto-rows: auto auto auto;
   grid-gap: 5px;
 }
 /* i styled the sections to fit inside the innerabout */
@@ -431,4 +405,15 @@ footer {
   width: 100%;
   height: 25em;
   border: var(--main-border);
+}
+
+#content-inner section {
+  display: none;
+}
+#content-inner section.active1 {
+  display: block;
+}
+
+.active2 span {
+  text-decoration: underline;
 }
