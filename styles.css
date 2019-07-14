@@ -8,6 +8,46 @@ html {
   box-sizing: inherit;
 }
 
+@media only screen and (max-width: 1026px) {
+  #foodSlider {
+    display: none;
+  }
+
+  #banner-pic {
+    display: none;
+  }
+
+  #logo {
+    display: none;
+  }
+
+  nav {
+    background-image: url(assets/Lush.png);
+    background-position: 50% 27%;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #about-menu {
+    order: 1;
+  }
+
+  #latest-news {
+    order: 2
+  }
+
+  #specialDay {
+    order: 3;
+  }
+
+  footer {
+    display: none;
+  }
+}
+
 
 header {
   display: flex;
@@ -293,7 +333,18 @@ input:focus {
 
 #specialPic {
   border: var(--main-border);
-  background-image: url("https://i.pinimg.com/236x/8c/77/66/8c7766c254b59004643c75fdc41a8866--pasta-sauces-pasta-recipes.jpg")
+  background-image: url("https://i.pinimg.com/236x/8c/77/66/8c7766c254b59004643c75fdc41a8866--pasta-sauces-pasta-recipes.jpg");
+  box-shadow: 0px 0px 8px 1px black;
+
+}
+
+/* this helps fix the overflow problem in the special area */
+#specialDesc {
+  width: 19em;
+}
+
+#specialPrice {
+  padding-left: 6em;
 }
 
 #tabMenu {
