@@ -258,6 +258,7 @@ main {
 
 #specialPic {
   border: var(--main-border);
+  background-image: url("https://i.pinimg.com/236x/8c/77/66/8c7766c254b59004643c75fdc41a8866--pasta-sauces-pasta-recipes.jpg")
 }
 
 #tabMenu {
@@ -510,19 +511,19 @@ select {
   background-color: #E9CCAF;
 }
 
-.col-25 {
-  float: left;
-  width: 25%;
-  margin-top: 6px;
+.specialofDay {
+  font-size: 18px;
+  font-family: fantasy;
 }
 
-.col-75 {
-  float: left;
-  width: 75%;
-  margin-top: 6px;
+#specialDesc {
+  margin-left: 1em;
 }
 
-@media screen and (max-width: 600px) {
+#specialPrice {
+  font-size: 20px;
+  margin-top: 2em;
+  font-family: fantasy;
 
   .col-25,
   .col-75,
@@ -531,6 +532,14 @@ select {
     margin-top: 0;
   }
 } 
+
+footer {
+  display: flex;
+}
+
+.bottomPage {
+  list-style: none;
+}
 
 
 
