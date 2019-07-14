@@ -16,7 +16,7 @@ header {
 :root {
   --main-border: 1px solid black;
   --menu-item-font: 14px;
-  --readMore: <a href= "#" >[Read More];
+  --readMore: <a href="#">[Read More];
 }
 
 #banner {
@@ -24,8 +24,8 @@ header {
 
   margin: auto;
 }
-@media (max-width: 700px) {
-}
+
+@media (max-width: 700px) {}
 
 #logo {
   position: absolute;
@@ -74,14 +74,12 @@ header {
 }
 
 #instagram {
-  background-image: linear-gradient(
-    -90deg,
-    #3b5998,
-    #3b5998,
-    #bc2a8d,
-    #fccc63,
-    #fccc63
-  );
+  background-image: linear-gradient(-90deg,
+      #3b5998,
+      #3b5998,
+      #bc2a8d,
+      #fccc63,
+      #fccc63);
   height: 40px;
   width: 40px;
   border-radius: 10px;
@@ -110,7 +108,7 @@ ul a {
   margin-right: 1em;
 }
 
-#nav-bar ul > li {
+#nav-bar ul>li {
   margin-bottom: -1em;
   padding: 1em;
 }
@@ -127,6 +125,7 @@ ul a {
 main {
   width: 100%;
 }
+
 /* this sets up the grid for the main area */
 #grid-container {
   padding: 5em 0 5em 1em;
@@ -148,6 +147,7 @@ main {
   grid-row-start: 1;
   grid-row-end: 4;
 }
+
 #innermenu {
   border: var(--main-border);
   margin-top: 0px;
@@ -159,6 +159,7 @@ main {
   box-shadow: 25px 4px 20px 0px rgba(0, 0, 0, 0.25);
   border-radius: 24px;
 }
+
 /* This styles the whole of the Latest News segment */
 #latestNews {
   border: var(--main-border);
@@ -184,6 +185,7 @@ main {
   width: 25em;
   margin-left: -0.5em;
 }
+
 /* sets up grid for the story and picture */
 #tag {
   height: 2em;
@@ -199,6 +201,7 @@ main {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
 #portraitPicture {
   height: 13em;
   border: var(--main-border);
@@ -208,6 +211,7 @@ main {
   background-position: 60% 10%;
   box-shadow: 0px 0px 8px 1px black;
 }
+
 #readMore {
   height: 5em;
   font-size: 1.5em;
@@ -215,15 +219,18 @@ main {
   grid-column-start: 2;
   grid-row-start: 7;
 }
+
 #readMore a {
   text-decoration: none;
   color: black;
 }
+
 #readMore a:hover {
   color: lightgray;
   transition: 0.3s;
   transform: scale(1.2);
 }
+
 /* This styles the special of the day */
 #specialDay {
   border: var(--main-border);
@@ -248,6 +255,7 @@ main {
   grid-template-rows: 8.5em 8.5em;
   grid-gap: 5px;
 }
+
 #specialPic {
   border: var(--main-border);
 }
@@ -255,7 +263,7 @@ main {
 #tabMenu {
   display: flex;
   justify-content: space-evenly;
-  grid-template-columns: 80px 80px 80px;
+  margin: 5px;
   padding: 15px 0 0 40px;
   grid-column-gap: 20px;
 }
@@ -269,7 +277,7 @@ main {
 /* this is for the styling of the menu tabs */
 /* this takes care of all the hover elements and postions the tabs */
 
-.tabItem > span {
+.tabItem>span {
   text-decoration: none;
   color: black;
   font-size: 1.3em;
@@ -280,11 +288,15 @@ main {
   display: grid;
   grid-auto-rows: auto auto auto;
   grid-gap: 5px;
+  border-style: double;
+  margin-left: 15px;
 }
+
 /* i styled the sections to fit inside the innerabout */
 #paraone {
   height: 200px;
 }
+
 #paraone p {
   padding: 10px;
 }
@@ -297,6 +309,7 @@ main {
   position: relative;
   /* margin: auto; */
 }
+
 #foodSlider {
   border: var(--main-border);
   height: 19.2em;
@@ -306,10 +319,12 @@ main {
 
   margin-left: 10em;
 }
+
 #foodSlider img {
   border-radius: 25px;
   height: 19em;
 }
+
 .myslides img {
   height: 200px;
   width: 375px;
@@ -336,14 +351,17 @@ main {
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
+
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
+
 .prev:hover,
 .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
+
 .numbertext {
   color: #f2f2f2;
   font-size: 10px;
@@ -376,10 +394,12 @@ main {
   animation-name: fade;
   animation-duration: 1.5s;
 }
+
 @-webkit-keyframes fade {
   from {
     opacity: 0.4;
   }
+
   to {
     opacity: 1;
   }
@@ -389,14 +409,17 @@ main {
   from {
     opacity: 0.4;
   }
+
   to {
     opacity: 1;
   }
 }
+
 /*  */
 #paratwo {
   height: 200px;
 }
+
 #paratwo p {
   padding: 10px;
 }
@@ -407,12 +430,14 @@ footer {
   border: var(--main-border);
 }
 
+/* this styles the menu items */
 #content-inner section {
   display: none;
-  max-height: 550px;
+  max-height: 38em;
   overflow-x: hidden;
   overflow-y: scroll;
 }
+
 #content-inner section.active1 {
   display: block;
 }
@@ -423,5 +448,86 @@ footer {
 
 h3 {
   text-transform: uppercase;
+  padding-left: 15px;
   color: #b47231;
+}
+
+.column {
+  transition: 0.5s;
+  font-family: cursive;
+  margin: 10px;
+  /* margin-left: 10px; */
+  padding-left: 10px;
+  /* margin-bottom: 10px; */
+  border: 5px;
+  border-style: double;
+}
+
+.fas {
+  margin-left: 15px;
+  margin-bottom: 10px;
+}
+
+.reservationBox {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto auto;
+
+  /* justify-content: center; */
+}
+
+.reservationBox h3 {
+  margin-left: 3em;
+}
+
+.reservationBox form {
+  margin-left: 7em;
+  outline: none;
+  height: 20px;
+  margin-bottom: 10px;
+}
+
+.reservationBox input {
+  padding: 1em 1em;
+  margin-bottom: 1.5em;
+}
+
+select {
+  height: 25px;
+  width: 67%;
+  border-radius: 10px;
+
+}
+
+.reservationBox button {
+  background-color: white;
+  font-size: 1em;
+  padding: 20px;
+}
+
+.reservationBox button:hover {
+  transition: 0.5s;
+  background-color: #E9CCAF;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+@media screen and (max-width: 600px) {
+
+  .col-25,
+  .col-75,
+  input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
 }
