@@ -95,6 +95,16 @@ $(document).ready(() => {
         $(".column." + category).append("<h1>" + category + "<h1>");
         $.each(items, function(index, item) {
           let price = parseFloat(item.price).toFixed(2);
+          let glutenfree = !item.extra.glutenfree
+            ? ""
+            : '<i class="fas fa-skull" title="Glutenfree"></i>';
+          let spicy = !item.extra.spicy
+            ? ""
+            : '<i class="fas fa-pepper-hot" title="Spicy"></i>'; //item.extra.spicy;
+          let veggies = !item.extra.vegetarian
+            ? ""
+            : '<i class="fas fa-carrot" title="Vegetarian"></i>'; //item.extra.vegetarian;
+
           $(".column." + category).append(
             "<h3>" +
               item.name +
@@ -103,7 +113,10 @@ $(document).ready(() => {
               "</h3> " +
               " <blockquote>" +
               item.description +
-              "</blockquote><br>"
+              "</blockquote>" +
+              glutenfree +
+              spicy +
+              veggies
           );
         });
       });
