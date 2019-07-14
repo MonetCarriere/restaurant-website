@@ -562,27 +562,6 @@ select {
   margin-top: 2em;
   font-family: fantasy;
 
-<<<<<<< HEAD
-  .col-25,
-  .col-75,
-  input[type=submit] {
-    width: 100%;
-    margin-top: 0;
-  }
-} 
-
-footer {
-  display: flex;
-}
-
-.bottomPage {
-  list-style: none;
-}
-
-
-
-  
-=======
 }
 
 
@@ -610,7 +589,6 @@ footer {
 #copy p {
   margin-left: 10px;
 }
->>>>>>> 772f768d5d101edff4518a52cfd170fbd1176992
 
 @media (max-width: 1200px) {
  
@@ -623,11 +601,13 @@ footer {
 }
 
 
+
 @media (min-width: 768) {
 
 #banner {
   display:none;
 }
+
 
   #grid-container{
       display:none;
@@ -643,4 +623,4 @@ footer {
   #grid-container{
     display: block;
   }
-}
+} 
