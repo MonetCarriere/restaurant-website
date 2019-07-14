@@ -100,10 +100,10 @@ $(document).ready(() => {
             : '<i class="fas fa-skull" title="Glutenfree"></i>';
           let spicy = !item.extra.spicy
             ? ""
-            : '<i class="fas fa-pepper-hot" title="Spicy"></i>'; //item.extra.spicy;
+            : '<i class="fas fa-pepper-hot" title="This item is spicy, please handle with care and drink lots of water"></i>'; //item.extra.spicy;
           let veggies = !item.extra.vegetarian
             ? ""
-            : '<i class="fas fa-carrot" title="Vegetarian"></i>'; //item.extra.vegetarian;
+            : '<i class="fas fa-carrot" title="This item contains no meat and has been prepared without the use of animal products"></i>'; //item.extra.vegetarian;
 
           $(".column." + category).append(
             "<h3>" +
