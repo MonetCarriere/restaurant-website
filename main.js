@@ -134,7 +134,7 @@ $(document).ready(() => {
       let index = Math.floor(Math.random() * arr.length);
       let index2 = Math.floor(Math.random() * special[arr[index]].length);
       let menu_item = special[arr[index]][index2];
-      console.log(menu_item.name[0]);
+      console.log(menu_item.name);
       console.log(menu_item.description);
       $("#specialName").append(
         "<p class='specialofDay'>" + menu_item.name + "</p>"
