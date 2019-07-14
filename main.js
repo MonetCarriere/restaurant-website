@@ -100,10 +100,10 @@ $(document).ready(() => {
             : '<i class="fas fa-skull" title="Glutenfree"></i>';
           let spicy = !item.extra.spicy
             ? ""
-            : '<i class="fas fa-pepper-hot" title="Spicy"></i>'; //item.extra.spicy;
+            : '<i class="fas fa-pepper-hot" title="This item is spicy, please handle with care and drink lots of water"></i>'; //item.extra.spicy;
           let veggies = !item.extra.vegetarian
             ? ""
-            : '<i class="fas fa-carrot" title="Vegetarian"></i>'; //item.extra.vegetarian;
+            : '<i class="fas fa-carrot" title="This item contains no meat and has been prepared without the use of animal products"></i>'; //item.extra.vegetarian;
 
           $(".column." + category).append(
             "<h3>" +
@@ -134,7 +134,7 @@ $(document).ready(() => {
       let index = Math.floor(Math.random() * arr.length);
       let index2 = Math.floor(Math.random() * special[arr[index]].length);
       let menu_item = special[arr[index]][index2];
-      console.log(menu_item.name[0]);
+      console.log(menu_item.name);
       console.log(menu_item.description);
       $("#specialName").append(
         "<p class='specialofDay'>" + menu_item.name + "</p>"

@@ -8,6 +8,7 @@ html {
   box-sizing: inherit;
 }
 
+
 header {
   display: flex;
   flex-direction: column;
@@ -50,22 +51,21 @@ header {
 }
 
 #socialMedia {
-  /* display: block; */
-  position: relative;
-  float: right;
-  bottom: 200px;
-  right: 150px;
+  display: flex;
+  margin-top: 5em;
+  justify-content: space-evenly;
+
 }
 
 #socialMedia i {
-  font-size: 45px;
+  font-size: 5em;
   padding-bottom: 5px;
 }
 
 #opentable {
-  padding-top: 5px;
-  height: 45px;
-  width: 45px;
+  border-radius: 15px;
+  height: 5em;
+  width: 5em;
 }
 
 #facbook {
@@ -74,12 +74,7 @@ header {
 }
 
 #instagram {
-  background-image: linear-gradient(-90deg,
-      #3b5998,
-      #3b5998,
-      #bc2a8d,
-      #fccc63,
-      #fccc63);
+
   height: 40px;
   width: 40px;
   border-radius: 10px;
@@ -141,9 +136,7 @@ main {
   background-color: #ee9634;
   border-radius: 24px;
   padding: 0.5em 0.5em 0em 0.5em;
-
   grid-column-start: 1;
-
   grid-row-start: 1;
   grid-row-end: 4;
 }
@@ -160,6 +153,63 @@ main {
   border-radius: 24px;
 }
 
+/* styling the comment section */
+#comments {
+  display: flex;
+  flex-direction: column;
+  height: 30em;
+  padding-left: 3.5em;
+}
+
+.useInfo {
+  display: block;
+}
+
+#comment {
+  width: 75%;
+  /* padding: 0; */
+  font-size: 1.0em;
+  text-align: left;
+}
+
+.useInfo {
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+  margin-bottom: 1em;
+  height: 2em;
+  margin-left: 1em;
+}
+
+input:focus {
+  outline: none;
+  width: 75%
+}
+
+#fname {
+  display: flex;
+}
+
+#lname {
+  display: flex;
+}
+
+#email {
+  display: flex;
+}
+
+#commentButton {
+  width: 75%;
+  height: 50px;
+  border-radius: 20px;
+  border: none;
+}
+
+#commentButton:hover {
+  border: none;
+  transition: 0.5s;
+  background-color: #E9CCAF;
+}
+
 /* This styles the whole of the Latest News segment */
 #latestNews {
   border: var(--main-border);
@@ -168,6 +218,12 @@ main {
   grid-row-start: 1;
   border-radius: 24px;
   padding: 0.5em 0.5em 0.5em -0.5em;
+}
+
+#latestNews p {
+  overflow: hidden;
+  text-overflow: clip;
+
 }
 
 #innerNews {
@@ -264,8 +320,9 @@ main {
 #tabMenu {
   display: flex;
   justify-content: space-evenly;
+  font-size: 0.8em;
   margin: 5px;
-  padding: 15px 0 0 40px;
+  padding: 15px 0 0 0px;
   grid-column-gap: 20px;
 }
 
@@ -429,6 +486,7 @@ footer {
   width: 100%;
   height: 25em;
   border: var(--main-border);
+  background-color: #ee9634;
 }
 
 /* this styles the menu items */
@@ -525,4 +583,30 @@ select {
   margin-top: 2em;
   font-family: fantasy;
 
+}
+
+
+
+#blurb {
+  display: flex;
+  justify-content: space-evenly;
+
+}
+
+.info {
+  font-size: 20px;
+  color: white;
+  height: 10em;
+  width: 20em;
+
+}
+
+#copy {
+  display: flex;
+  color: white;
+  justify-content: flex-start;
+}
+
+#copy p {
+  margin-left: 10px;
 }
