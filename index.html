@@ -41,7 +41,7 @@
                             <div class="tabItem" data-shizzle="comments"><span>Comments</span></div>
                         </div>
                         <div id="content-inner">
-                            <section id="journey">
+                            <section id="journey" class="active1">
                                 <div id="paraone">
                                     <p>We are a modern fine dining restaurant where experimentation becomes the
                                         everyday. Every dish at Lush has its own story from traditional recipes to
@@ -141,7 +141,7 @@
 
                                 </div>
                             </section>
-                            <section id="comments" class="active1">
+                            <section id="comments">
                                 <div id="disqus_thread"></div>
                                 <script>
                                     /**
@@ -149,8 +149,9 @@
                                      *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
 
                                     var disqus_config = function () {
-                                        this.page.url = // Replace PAGE_URL with your page's canonical URL variable
-                                            this.page.identifier =
+                                        this.page.url = lushish.surge
+                                            .sh // Replace PAGE_URL with your page's canonical URL variable
+                                        this.page.identifier =
                                             onePunch; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
                                     };
 
