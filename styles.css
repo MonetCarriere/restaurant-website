@@ -409,6 +409,9 @@ footer {
 
 #content-inner section {
   display: none;
+  max-height: 550px;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 #content-inner section.active1 {
   display: block;
@@ -416,4 +419,9 @@ footer {
 
 .active2 span {
   text-decoration: underline;
+}
+
+h3 {
+  text-transform: uppercase;
+  color: #b47231;
 }

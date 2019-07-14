@@ -78,6 +78,7 @@ function showSlides2() {
 // };
 
 $(document).ready(() => {
+  //this assigns an active class to each tab item and then highlights each item
   $(document).on("click", ".tabItem", function() {
     $(".tabItem").removeClass("active2");
     $(this).addClass("active2");
@@ -85,5 +86,29 @@ $(document).ready(() => {
     $("#content-inner section").removeClass("active1");
     $("#" + content).addClass("active1");
   });
-  //this assigns an active class to each tab item and then highlights each item
+
+  $.get(
+    "https://obscure-tundra-54269.herokuapp.com/fine-dining",
+    function(menu) {
+      $.each(menu, function(category, items) {
+        $("#menu").append('<div class="column ' + category + '"></div>');
+        $(".column." + category).append("<h1>" + category + "<h1>");
+        $.each(items, function(index, item) {
+          let price = parseFloat(item.price).toFixed(2);
+          $(".column." + category).append(
+            "<h3>" +
+              item.name +
+              " - $" +
+              price +
+              "</h3> " +
+              " <blockquote>" +
+              item.description +
+              "</blockquote><br>"
+          );
+        });
+      });
+      console.log(menu);
+    },
+    "json"
+  );
 });
