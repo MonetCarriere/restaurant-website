@@ -258,6 +258,7 @@ main {
 
 #specialPic {
   border: var(--main-border);
+  background-image: url("https://i.pinimg.com/236x/8c/77/66/8c7766c254b59004643c75fdc41a8866--pasta-sauces-pasta-recipes.jpg")
 }
 
 #tabMenu {
@@ -508,4 +509,20 @@ select {
 .reservationBox button:hover {
   transition: 0.5s;
   background-color: #E9CCAF;
+}
+
+.specialofDay {
+  font-size: 18px;
+  font-family: fantasy;
+}
+
+#specialDesc {
+  margin-left: 1em;
+}
+
+#specialPrice {
+  font-size: 20px;
+  margin-top: 2em;
+  font-family: fantasy;
+
 }
