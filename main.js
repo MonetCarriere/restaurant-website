@@ -120,7 +120,34 @@ $(document).ready(() => {
           );
         });
       });
-      console.log(menu);
+    },
+    "json"
+  );
+
+  $.get(
+    "https://obscure-tundra-54269.herokuapp.com/fine-dining",
+    function(special) {
+      let arr = [];
+      $.each(special, function(item, list) {
+        arr.push(item);
+        $.each(list, function(x, y) {});
+      });
+      let index = Math.floor(Math.random() * arr.length);
+      let index2 = Math.floor(Math.random() * special[arr[index]].length);
+      let menu_item = special[arr[index]][index2];
+      console.log(menu_item.name);
+      console.log(menu_item.description);
+      $("#specialName").append(
+        "<p class='specialofDay'>" + menu_item.name + "</p>"
+      );
+      $("#specialDesc").append(
+        "<p>" +
+          menu_item.description +
+          "</p>" +
+          "<p class='specialofDay>" +
+          menu_item.price +
+          "</p>"
+      );
     },
     "json"
   );
