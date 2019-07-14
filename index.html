@@ -20,14 +20,7 @@
 
                 </div>
 
-                <div id="nav-bar">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="indexteam.html" target="_blank">About Us</a></li2>
-                        <li><a href="#">Catering</a></li3>
-                        <li><a href="#socialMedia">Contact Us</a></li>
-                    </ul>
-                </div>
+
             </nav>
         </header>
         <main>
@@ -41,7 +34,7 @@
                             <div class="tabItem" data-shizzle="comments"><span>Comments</span></div>
                         </div>
                         <div id="content-inner">
-                            <section id="journey">
+                            <section id="journey" class="active1">
                                 <div id="paraone">
                                     <p>We are a modern fine dining restaurant where experimentation becomes the
                                         everyday. Every dish at Lush has its own story from traditional recipes to
@@ -141,7 +134,7 @@
 
                                 </div>
                             </section>
-                            <section id="comments" class="active1">
+                            <section id="comments">
                                 <div id="disqus_thread"></div>
                                 <script>
                                     /**
@@ -149,8 +142,9 @@
                                      *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
 
                                     var disqus_config = function () {
-                                        this.page.url = // Replace PAGE_URL with your page's canonical URL variable
-                                            this.page.identifier =
+                                        this.page.url = lushish.surge
+                                            .sh // Replace PAGE_URL with your page's canonical URL variable
+                                        this.page.identifier =
                                             onePunch; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
                                     };
 
@@ -165,24 +159,6 @@
                                 <noscript>Please enable JavaScript to view the <a
                                         href="https://disqus.com/?ref_noscript">comments powered by
                                         Disqus.</a></noscript>
-                                <!-- <form action="/action_page.php">
-                                    <textarea name="comment" id="comment" cols="30" rows="10"
-                                        placeholder="Leave us a comment">
-                                    </textarea>
-                                    <div id="fname">
-                                        <label for="fname">First Name:
-                                        </label><input type="text" name="fname" class="useInfo">
-                                    </div>
-                                    <div id="lname">
-                                        <label for="lname">Last Name:
-                                        </label> <input type="text" name="lname" class="useInfo">
-                                    </div>
-                                    <div id="email">
-                                        <label for="email">Email: </label><input type="email" name="email"
-                                            class="useInfo">
-                                    </div>
-                                    <button type="button" id="commentButton">Submit</button:b>
-                                </form> -->
                             </section>
                         </div>
 
