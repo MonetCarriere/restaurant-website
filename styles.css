@@ -24,23 +24,24 @@ html {
   nav {
     background-image: url(assets/Lush.png);
     background-position: 50% 27%;
+    background-repeat: no-repeat;
   }
 
-  main {
+  #container {
     display: flex;
     flex-direction: column;
   }
 
-  #about-menu {
-    order: 1;
-  }
+  #about-menu {}
 
-  #latest-news {
-    order: 2
+  #latestNews {
+    position: absolute;
+    top: 65em;
   }
 
   #specialDay {
-    order: 3;
+    position: absolute;
+    top: 85em;
   }
 
   footer {
