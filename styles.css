@@ -71,16 +71,18 @@ html {
     left: 25px;
     top: 85em;
   }
+
   .info {
     display: none;
   }
+
   footer {
     position: absolute;
 
     top: 110em;
   }
-  #socialMedia {
-  }
+
+  #socialMedia {}
 }
 
 header {
@@ -91,7 +93,7 @@ header {
 :root {
   --main-border: 1px solid black;
   --menu-item-font: 14px;
-  --readMore: <a href= "#" >[Read More];
+  --readMore: <a href="#">[Read More];
 }
 
 #banner {
@@ -393,7 +395,7 @@ input:focus {
 /* this is for the styling of the menu tabs */
 /* this takes care of all the hover elements and postions the tabs */
 
-.tabItem > span {
+.tabItem>span {
   text-decoration: none;
   color: black;
   font-size: 1.3em;
