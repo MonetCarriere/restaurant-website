@@ -42,33 +42,33 @@ html {
   #about-menu {
     width: 100%;
     position: relative;
-    left: 30px;
+    left: 25px;
     margin-right: 20px;
     padding-left: 0px;
   }
 
   #innermenu {
-    width: 20em;
+    width: 90%;
   }
 
   #grid-container {
-    margin-right: 20px;
+    margin: -40px;
+    padding: 0;
   }
 
   #content-inner {
-    margin-left: 10px;
-    margin-right: 20px;
+    margin: 0px;
   }
 
   #latestNews {
     position: absolute;
-    left: 3.5em;
+    left: 25px;
     top: 65em;
   }
 
   #specialDay {
     position: absolute;
-    left: 3.5em;
+    left: 25px;
     top: 85em;
   }
   .info {
