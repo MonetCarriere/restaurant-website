@@ -8,7 +8,7 @@ html {
   box-sizing: inherit;
 }
 
-@media only screen and (max-width: 1026px) {
+@media only screen and (max-width: 800px) {
   #foodSlider {
     display: none;
   }
@@ -21,36 +21,55 @@ html {
     display: none;
   }
 
+  #myslides {
+    width: 200px;
+  }
+
   nav {
     background-image: url(assets/Lush.png);
     background-position: 50% 27%;
     background-repeat: no-repeat;
+    margin-left: 1em;
   }
 
   #container {
+    width: 100%;
+    max-width: 1200px;
     display: flex;
     flex-direction: column;
-  }
 
-  #grid-container {
-    width: 100%
   }
 
   #about-menu {
     width: 100%;
-    margin-right: 50px;
-    overflow: hidden;
+    position: relative;
+    left: 30px;
+    margin-right: 20px;
+    padding-left: 0px;
   }
 
-  #content-inner {}
+  #innermenu {
+    width: 20em;
+  }
+
+  #grid-container {
+    margin-right: 20px;
+  }
+
+  #content-inner {
+    margin-left: 10px;
+    margin-right: 20px;
+  }
 
   #latestNews {
     position: absolute;
+    left: 3.5em;
     top: 65em;
   }
 
   #specialDay {
     position: absolute;
+    left: 3.5em;
     top: 85em;
   }
 
@@ -92,6 +111,15 @@ header {
 
   top: 5.49px;
   transform: rotate(-0.07deg);
+}
+
+#logo {
+  position: absolute;
+  width: 17em;
+  height: 13em;
+  left: 42%;
+  top: 1%;
+  box-shadow: 0px 0px 10px 1px lightgrey;
 }
 
 #socialMedia {
