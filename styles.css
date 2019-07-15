@@ -71,16 +71,18 @@ html {
     left: 25px;
     top: 85em;
   }
+
   .info {
     display: none;
   }
+
   footer {
     position: absolute;
 
     top: 110em;
   }
-  #socialMedia {
-  }
+
+  #socialMedia {}
 }
 
 header {
@@ -91,7 +93,7 @@ header {
 :root {
   --main-border: 1px solid black;
   --menu-item-font: 14px;
-  --readMore: <a href= "#" >[Read More];
+  --readMore: <a href="#">[Read More];
 }
 
 #banner {
@@ -393,7 +395,7 @@ input:focus {
 /* this is for the styling of the menu tabs */
 /* this takes care of all the hover elements and postions the tabs */
 
-.tabItem > span {
+.tabItem>span {
   text-decoration: none;
   color: black;
   font-size: 1.3em;
@@ -661,8 +663,8 @@ select {
 
 #copy p {
   margin-left: 10px;
+
 }
-<<<<<<< HEAD
 
 @media (max-width: 1200px) {
  
@@ -698,5 +700,3 @@ select {
     display: block;
   }
 } 
-=======
->>>>>>> d3e9ec3136b93ec3cdd2861ca4d8c693fa07597d
