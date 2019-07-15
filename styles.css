@@ -663,4 +663,40 @@ select {
 
 #copy p {
   margin-left: 10px;
+
 }
+
+@media (max-width: 1200px) {
+ 
+}
+
+@media (min-width: 992px) {
+  #tabMenu {
+    display: none;
+  }
+}
+
+
+
+@media (min-width: 768) {
+
+#banner {
+  display:none;
+}
+
+
+  #grid-container{
+      display:none;
+  }
+}
+
+
+@media (min-width: 767) {
+  #banner {
+    display:none;
+  }
+
+  #grid-container{
+    display: block;
+  }
+} 
