@@ -8,6 +8,80 @@ html {
   box-sizing: inherit;
 }
 
+@media only screen and (max-width: 800px) {
+  #foodSlider {
+    display: none;
+  }
+
+  #banner-pic {
+    display: none;
+  }
+
+  #logo {
+    display: none;
+  }
+
+  #myslides {
+    width: 200px;
+  }
+
+  nav {
+    background-image: url(assets/Lush.png);
+    background-position: 50% 27%;
+    background-repeat: no-repeat;
+    margin-left: 1em;
+  }
+
+  #container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #about-menu {
+    width: 100%;
+    position: relative;
+    left: 25px;
+    margin-right: 20px;
+    padding-left: 0px;
+  }
+
+  #innermenu {
+    width: 90%;
+  }
+
+  #grid-container {
+    margin: -40px;
+    padding: 0;
+  }
+
+  #content-inner {
+    margin: 0px;
+  }
+
+  #latestNews {
+    position: absolute;
+    left: 25px;
+    top: 65em;
+  }
+
+  #specialDay {
+    position: absolute;
+    left: 25px;
+    top: 85em;
+  }
+  .info {
+    display: none;
+  }
+  footer {
+    position: absolute;
+
+    top: 110em;
+  }
+  #socialMedia {
+  }
+}
 
 header {
   display: flex;
@@ -17,24 +91,13 @@ header {
 :root {
   --main-border: 1px solid black;
   --menu-item-font: 14px;
-  --readMore: <a href="#">[Read More];
+  --readMore: <a href= "#" >[Read More];
 }
 
 #banner {
   width: 840px;
 
   margin: auto;
-}
-
-@media (max-width: 700px) {}
-
-#logo {
-  position: absolute;
-  width: 17em;
-  height: 13em;
-  left: 42%;
-  top: 1%;
-  box-shadow: 0px 0px 10px 1px lightgrey;
 }
 
 #banner-pic {
@@ -50,11 +113,19 @@ header {
   transform: rotate(-0.07deg);
 }
 
+#logo {
+  position: absolute;
+  width: 17em;
+  height: 13em;
+  left: 42%;
+  top: 1%;
+  box-shadow: 0px 0px 10px 1px lightgrey;
+}
+
 #socialMedia {
   display: flex;
   margin-top: 5em;
   justify-content: space-evenly;
-
 }
 
 #socialMedia i {
@@ -74,7 +145,6 @@ header {
 }
 
 #instagram {
-
   height: 40px;
   width: 40px;
   border-radius: 10px;
@@ -142,7 +212,7 @@ main {
 #comment {
   width: 75%;
   /* padding: 0; */
-  font-size: 1.0em;
+  font-size: 1em;
   text-align: left;
 }
 
@@ -161,7 +231,7 @@ main {
 
 input:focus {
   outline: none;
-  width: 75%
+  width: 75%;
 }
 
 #fname {
@@ -186,7 +256,7 @@ input:focus {
 #commentButton:hover {
   border: none;
   transition: 0.5s;
-  background-color: #E9CCAF;
+  background-color: #e9ccaf;
 }
 
 /* This styles the whole of the Latest News segment */
@@ -202,7 +272,6 @@ input:focus {
 #latestNews p {
   overflow: hidden;
   text-overflow: clip;
-
 }
 
 #innerNews {
@@ -293,7 +362,17 @@ input:focus {
 
 #specialPic {
   border: var(--main-border);
-  background-image: url("https://i.pinimg.com/236x/8c/77/66/8c7766c254b59004643c75fdc41a8866--pasta-sauces-pasta-recipes.jpg")
+  background-image: url("https://i.pinimg.com/236x/8c/77/66/8c7766c254b59004643c75fdc41a8866--pasta-sauces-pasta-recipes.jpg");
+  box-shadow: 0px 0px 8px 1px black;
+}
+
+/* this helps fix the overflow problem in the special area */
+#specialDesc {
+  width: 19em;
+}
+
+#specialPrice {
+  padding-left: 6em;
 }
 
 #tabMenu {
@@ -314,7 +393,7 @@ input:focus {
 /* this is for the styling of the menu tabs */
 /* this takes care of all the hover elements and postions the tabs */
 
-.tabItem>span {
+.tabItem > span {
   text-decoration: none;
   color: black;
   font-size: 1.3em;
@@ -534,7 +613,6 @@ select {
   height: 25px;
   width: 67%;
   border-radius: 10px;
-
 }
 
 .reservationBox button {
@@ -545,7 +623,7 @@ select {
 
 .reservationBox button:hover {
   transition: 0.5s;
-  background-color: #E9CCAF;
+  background-color: #e9ccaf;
 }
 
 .specialofDay {
@@ -561,15 +639,11 @@ select {
   font-size: 20px;
   margin-top: 2em;
   font-family: fantasy;
-
 }
-
-
 
 #blurb {
   display: flex;
   justify-content: space-evenly;
-
 }
 
 .info {
@@ -577,7 +651,6 @@ select {
   color: white;
   height: 10em;
   width: 20em;
-
 }
 
 #copy {
@@ -589,6 +662,7 @@ select {
 #copy p {
   margin-left: 10px;
 }
+<<<<<<< HEAD
 
 @media (max-width: 1200px) {
  
@@ -624,3 +698,5 @@ select {
     display: block;
   }
 } 
+=======
+>>>>>>> d3e9ec3136b93ec3cdd2861ca4d8c693fa07597d
