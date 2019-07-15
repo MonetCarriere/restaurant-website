@@ -37,7 +37,6 @@ html {
     max-width: 1200px;
     display: flex;
     flex-direction: column;
-
   }
 
   #about-menu {
@@ -72,14 +71,17 @@ html {
     left: 3.5em;
     top: 85em;
   }
-
-
-
-  footer {
+  .info {
     display: none;
   }
-}
+  footer {
+    position: absolute;
 
+    top: 110em;
+  }
+  #socialMedia {
+  }
+}
 
 header {
   display: flex;
@@ -89,7 +91,7 @@ header {
 :root {
   --main-border: 1px solid black;
   --menu-item-font: 14px;
-  --readMore: <a href="#">[Read More];
+  --readMore: <a href= "#" >[Read More];
 }
 
 #banner {
@@ -97,8 +99,6 @@ header {
 
   margin: auto;
 }
-
-
 
 #banner-pic {
   background: url(assets/pexels-photo-1528013.jpeg);
@@ -126,7 +126,6 @@ header {
   display: flex;
   margin-top: 5em;
   justify-content: space-evenly;
-
 }
 
 #socialMedia i {
@@ -146,7 +145,6 @@ header {
 }
 
 #instagram {
-
   height: 40px;
   width: 40px;
   border-radius: 10px;
@@ -214,7 +212,7 @@ main {
 #comment {
   width: 75%;
   /* padding: 0; */
-  font-size: 1.0em;
+  font-size: 1em;
   text-align: left;
 }
 
@@ -233,7 +231,7 @@ main {
 
 input:focus {
   outline: none;
-  width: 75%
+  width: 75%;
 }
 
 #fname {
@@ -258,7 +256,7 @@ input:focus {
 #commentButton:hover {
   border: none;
   transition: 0.5s;
-  background-color: #E9CCAF;
+  background-color: #e9ccaf;
 }
 
 /* This styles the whole of the Latest News segment */
@@ -274,7 +272,6 @@ input:focus {
 #latestNews p {
   overflow: hidden;
   text-overflow: clip;
-
 }
 
 #innerNews {
@@ -367,7 +364,6 @@ input:focus {
   border: var(--main-border);
   background-image: url("https://i.pinimg.com/236x/8c/77/66/8c7766c254b59004643c75fdc41a8866--pasta-sauces-pasta-recipes.jpg");
   box-shadow: 0px 0px 8px 1px black;
-
 }
 
 /* this helps fix the overflow problem in the special area */
@@ -397,7 +393,7 @@ input:focus {
 /* this is for the styling of the menu tabs */
 /* this takes care of all the hover elements and postions the tabs */
 
-.tabItem>span {
+.tabItem > span {
   text-decoration: none;
   color: black;
   font-size: 1.3em;
@@ -617,7 +613,6 @@ select {
   height: 25px;
   width: 67%;
   border-radius: 10px;
-
 }
 
 .reservationBox button {
@@ -628,7 +623,7 @@ select {
 
 .reservationBox button:hover {
   transition: 0.5s;
-  background-color: #E9CCAF;
+  background-color: #e9ccaf;
 }
 
 .specialofDay {
@@ -644,15 +639,11 @@ select {
   font-size: 20px;
   margin-top: 2em;
   font-family: fantasy;
-
 }
-
-
 
 #blurb {
   display: flex;
   justify-content: space-evenly;
-
 }
 
 .info {
@@ -660,7 +651,6 @@ select {
   color: white;
   height: 10em;
   width: 20em;
-
 }
 
 #copy {
